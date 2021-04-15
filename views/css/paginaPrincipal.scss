@@ -1,0 +1,144 @@
+#bodyContainer {
+    .pagarTodo {
+        display: grid;
+        grid-template-columns: 50px 1fr 120px;
+        
+        .left,
+        .center,
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+    
+        .center {
+            .total {
+                color: #009432;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    
+        .right {
+            .btn {
+                font-size: .8rem;
+                background-color: #009432;
+                border-color: #009432;
+            }
+    
+            .btn:hover {
+                color: #009432;
+                background-color: #fff;
+            }
+        }
+    }
+    
+    .contratos {
+        .subSlider {
+            width: 100%;
+            grid-template-columns: 1fr;
+    
+            .contrato {
+                //width: 278px;
+        
+                h2 {
+                    color: #1B1464;
+                    font-weight: 400;
+                    text-align: center;
+                    padding: 5px;
+                }
+            
+                table {
+                    width: 90%;
+                    margin: 10px auto;
+            
+                    tr {
+                        td {
+                            font-family: 'Roboto', sans-serif;
+                            color: #848484;
+                            font-weight: 300;
+                        }
+            
+                        .info {
+                            color: #009432;
+                            text-align: right;
+                        }
+                    }
+                }
+            
+                .btn {
+                    background-color: #009432;
+                    border-color: #009432;
+                    width: 60%;
+                    margin: 10px auto;
+                }
+            
+                .btn:hover {
+                    color: #009432;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    
+    .transacciones {
+        table {
+            width: 100%;
+            border-collapse: collapse;
+    
+            tr:nth-of-type(2) td {
+                padding-top: 5px;
+            }
+    
+            tr {
+                th {
+                    color: #1B1464;
+                    font-weight: 400;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid #d1d1d1;
+                    font-size: 1.1rem;
+                }
+    
+                td {
+                    padding: 1px;
+                }
+    
+                td,
+                a {
+                    font-weight: 300;
+                    font-family: 'Roboto', sans-serif;
+                    text-align: center;
+                    color: #9c9c9c;
+                }
+    
+                a {
+                    text-decoration: none;
+                    transition: all ease .2s;
+                }
+    
+                a:hover {
+                    color: #0ABDE3;
+                    text-decoration: underline;
+                }
+            }
+    
+            tr:nth-of-type(1) {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 375px) {
+    #bodyContainer {
+        .contratos {
+            margin-left: 2.5%;
+
+            .subSlider {
+                .contrato {
+                    width: 95%;
+                }
+            }
+        }
+    }
+}

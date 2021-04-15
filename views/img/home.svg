@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_38" data-name="Rectángulo 38" width="18" height="18" transform="translate(0 -0.08)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_18" data-name="Enmascarar grupo 18" transform="translate(0 0.08)" clip-path="url(#clip-path)">
+    <path id="iconmonstr-home-6" d="M15.967,10.332v7.6H11.4V13.374H6.843v4.562H2.281v-7.6H0L9.124,1.208l9.124,9.124Zm-.76-4.491V1.969H12.926V3.56Z" transform="translate(0 -0.467)" fill="#fff"/>
+  </g>
+</svg>

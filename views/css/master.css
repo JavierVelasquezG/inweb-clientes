@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Raleway", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  text-decoration: none;
+  display: block;
+  outline: none;
+  padding: 5px;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 8px;
+  transition: all ease 0.3s;
+  border: solid #000 1px;
+}
+
+.title h2 {
+  font-weight: 400;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #fff;
+}
+
+.up {
+  margin-top: -45px;
+  width: 90%;
+}
+
+.slider {
+  overflow-x: scroll;
+}
+.slider .subSlider {
+  display: grid;
+  padding: 10px 0;
+}
+
+#bodyContainer {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 65px;
+}
+#bodyContainer .menuDisplay {
+  background-color: #1A1A1A;
+  position: fixed;
+  top: 0;
+  left: -100vw;
+  height: 100%;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  padding: 0 10px;
+  transition: all ease 0.5s;
+}
+#bodyContainer .menuDisplay h2 {
+  color: #fff;
+  font-weight: 800;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 15px 10px;
+}
+#bodyContainer .menuDisplay ul li {
+  transition: all ease 0.2s;
+}
+#bodyContainer .menuDisplay ul li a {
+  text-decoration: none;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+}
+#bodyContainer .menuDisplay ul li a .img {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+#bodyContainer .menuDisplay ul li a .text {
+  color: #BFBFBF;
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  transition: all ease 0.2s;
+}
+#bodyContainer .menuDisplay ul li:hover {
+  background-color: #232323;
+  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+#bodyContainer .menuDisplay ul li:hover .text {
+  color: #fff;
+}
+#bodyContainer .mobileHeader {
+  background-color: #212326;
+  height: 190px;
+}
+#bodyContainer .mobileHeader .pattern {
+  background-image: url(../img/pattern.svg);
+  height: 100%;
+}
+#bodyContainer .mobileHeader .pattern .top {
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  transition: all ease 0.3s;
+  background-color: rgba(0, 0, 0, 0);
+}
+#bodyContainer .mobileHeader .pattern .top .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+}
+#bodyContainer .mobileHeader .pattern .top .wrapper .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#bodyContainer .mobileHeader .pattern .top .wrapper .left h1 {
+  font-weight: 800;
+  color: #fff;
+}
+#bodyContainer .mobileHeader .pattern .top .wrapper .right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#bodyContainer .mobileHeader .pattern .top .wrapper .right a {
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+#bodyContainer .mobileHeader .pattern .bottom h2 {
+  font-weight: 400;
+  color: #fff;
+  padding-top: 105px;
+  width: 90%;
+  margin: 0 auto;
+}
+#bodyContainer .mobileFooter {
+  background-color: #212326;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#bodyContainer .mobileFooter .pattern {
+  background-image: url(../img/pattern.svg);
+  height: 100%;
+}
+#bodyContainer .mobileFooter .pattern h2 {
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 375px) {
+  .container {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .container {
+    width: 85%;
+  }
+
+  #bodyContainer .mobileHeader .pattern .top .wrapper {
+    width: 85%;
+  }
+  #bodyContainer .mobileHeader .pattern .bottom h2 {
+    width: 85%;
+  }
+}
