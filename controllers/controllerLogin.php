@@ -5,8 +5,8 @@ require __DIR__ . '/../models/model.php';
 //Input: Usuario, contraseña
 
 $input = array(
-    'correo' => 'testemail',
-    'contrasena' => 'testpassword'
+    'correo' => 'javier.velasquez@inweb.cl',
+    'contrasena' => 'javg2001'
 );
 
 $login = new Login;

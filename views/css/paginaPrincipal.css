@@ -1,102 +1,115 @@
-#bodyContainer .pagarTodo {
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo {
   display: grid;
   grid-template-columns: 50px 1fr 120px;
 }
-#bodyContainer .pagarTodo .left,
-#bodyContainer .pagarTodo .center,
-#bodyContainer .pagarTodo .right {
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .left,
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .center,
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .right {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 5px;
 }
-#bodyContainer .pagarTodo .center .total {
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .center {
+  justify-content: flex-start;
+}
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .center .total {
   color: #009432;
   font-family: "Roboto", sans-serif;
 }
-#bodyContainer .pagarTodo .right .btn {
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .right .btn {
   font-size: 0.8rem;
   background-color: #009432;
   border-color: #009432;
 }
-#bodyContainer .pagarTodo .right .btn:hover {
+#bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .right .btn:hover {
   color: #009432;
   background-color: #fff;
 }
-#bodyContainer .contratos .subSlider {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider {
   width: 100%;
   grid-template-columns: 1fr;
 }
-#bodyContainer .contratos .subSlider .contrato h2 {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato h2 {
   color: #1B1464;
   font-weight: 400;
   text-align: center;
   padding: 5px;
+  font-size: 1.3rem;
 }
-#bodyContainer .contratos .subSlider .contrato table {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato table {
   width: 90%;
   margin: 10px auto;
 }
-#bodyContainer .contratos .subSlider .contrato table tr td {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato table tr td {
   font-family: "Roboto", sans-serif;
   color: #848484;
   font-weight: 300;
 }
-#bodyContainer .contratos .subSlider .contrato table tr .info {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato table tr .info {
   color: #009432;
   text-align: right;
 }
-#bodyContainer .contratos .subSlider .contrato .btn {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato .btn {
   background-color: #009432;
   border-color: #009432;
   width: 60%;
   margin: 10px auto;
 }
-#bodyContainer .contratos .subSlider .contrato .btn:hover {
+#bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato .btn:hover {
   color: #009432;
   background-color: #fff;
 }
-#bodyContainer .transacciones table {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0 3px;
 }
-#bodyContainer .transacciones table tr:nth-of-type(2) td {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr:nth-of-type(2) td {
   padding-top: 5px;
 }
-#bodyContainer .transacciones table tr th {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr th {
   color: #1B1464;
   font-weight: 400;
   padding-bottom: 5px;
   border-bottom: 1px solid #d1d1d1;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
 }
-#bodyContainer .transacciones table tr td {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr td {
   padding: 1px;
 }
-#bodyContainer .transacciones table tr td,
-#bodyContainer .transacciones table tr a {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr td,
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr a {
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #9c9c9c;
 }
-#bodyContainer .transacciones table tr a {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr a {
   text-decoration: none;
   transition: all ease 0.2s;
 }
-#bodyContainer .transacciones table tr a:hover {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr a:hover {
   color: #0ABDE3;
   text-decoration: underline;
 }
-#bodyContainer .transacciones table tr:nth-of-type(1) {
+#bodyContainer #mainContent .pattern .mainWrapper .transacciones table tr:nth-of-type(1) {
   padding-bottom: 5px;
 }
 
 @media only screen and (min-width: 375px) {
-  #bodyContainer .contratos {
-    margin-left: 2.5%;
+  #bodyContainer #mainContent .pattern .mainWrapper .pagarTodo .center {
+    padding-left: 10px;
   }
-  #bodyContainer .contratos .subSlider .contrato {
+  #bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider {
+    padding: 10px 3%;
+  }
+  #bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider .contrato {
     width: 95%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  #bodyContainer #mainContent .pattern .mainWrapper .contratos .subSlider {
+    padding: 10px 5.4%;
   }
 }

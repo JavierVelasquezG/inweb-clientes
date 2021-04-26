@@ -22,7 +22,9 @@ menu.addEventListener('click', function(){
     
     setTimeout(() => {
 
-        if (this.querySelector('img').src == 'http://localhost/Proyectos/Clients/views/img/menu.svg') {
+        var icon = this.querySelector('img').src.split('/').reverse()[0];
+
+        if (icon == 'menu.svg') {
 
             this.querySelector('img').src = 'views/img/close.svg';
 

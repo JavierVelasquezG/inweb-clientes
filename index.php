@@ -9,6 +9,10 @@ include_once 'views/header.php';
 
 ?>
 
+<div class="title desktop">
+    <h2>Contratos</h2>
+</div>
+
 <div class="container up pagarTodo">
     <div class="left">
         <img src="views/img/cardIcon.png" alt="Card">
@@ -25,12 +29,34 @@ include_once 'views/header.php';
 </div>
 
 
-<div class="title">
+<div class="title mobile">
     <h2>Contratos</h2>
 </div>
 
 <div class="slider contratos">
     <div class="subSlider">
+        <div class="container contrato">
+            <h2>Empresa Ltda.</h2>
+            <table>
+                <tr>
+                    <td>Dominio</td>
+                    <td class="info">empresa.cl</td>
+                </tr>
+                <tr>
+                    <td>Precio anual</td>
+                    <td class="info">$299.000</td>
+                </tr>
+                <tr>
+                    <td>Prox. Vencimiento</td>
+                    <td class="info">26/04/2021</td>
+                </tr>
+                <tr>
+                    <td>Plazo de pago</td>
+                    <td class="info">Anual</td>
+                </tr>
+            </table>
+            <a class="btn" href="#">Pagar</a>
+        </div>
         <div class="container contrato">
             <h2>Empresa Ltda.</h2>
             <table>
